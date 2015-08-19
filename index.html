@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+<title>
+Vaibhav Malik Web Designer
+</title>
+<link type="text/css" rel="stylesheet" href="stylesheets/home.css"/>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function() {
+   jQuery(function(){
+     $("#scroll").hover(
+          function(){this.src = this.src.replace("images/bluearrow.png","images/yellowarrow.png");},
+          function(){this.src = this.src.replace("images/yellowarrow.png","images/bluearrow.png");
+     });
+});
+$('#scroll').click(function(){
+$('html, body').animate({scrollTop:$('#body2').position().top}, 'slow');
+});
+$('#scroll2').click(function(){
+$('html, body').animate({scrollTop:$('#body3').position().top}, 'slow');
+});
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $("#footer").css("opacity","1");
+   }
+      if($(window).scrollTop() + $(window).height() != $(document).height()) {
+       $("#footer").css("opacity",".5");
+   }
+jQuery(function(){
+     $("#scroll2").hover(
+          function(){this.src = this.src.replace("images/bluearrow.png","images/yellowarrow.png");},
+          function(){this.src = this.src.replace("images/yellowarrow.png","images/bluearrow.png");
+     });
+});
+});
+$('img.up').click(function(){
+$('html, body').animate({scrollTop:$('#body').position().top}, 'slow');
+});
+$( ".caption1" ).click(function() {
+$(".overlay").css("z-index","1");
+$(".caption1").css("z-index","0");
+  $( ".overlay" ).animate({
+    opacity: 0.9
+
+  }, 500, function() {
+    // Animation complete.
+  });
+});
+
+$( ".overlay" ).mouseleave(function() {
+  $( ".overlay" ).animate({
+    opacity: 0
+
+  }, 1, function() {
+    // Animation complete.
+  });
+  $(".overlay").css("z-index","0");
+  $(".caption1").css("z-index","1");
+});
+$( ".caption2" ).click(function() {
+$(".overlay2").css("z-index","1");
+$(".caption2").css("z-index","0");
+  $( ".overlay2" ).animate({
+    opacity: 0.9
+
+  }, 500, function() {
+    // Animation complete.
+  });
+});
+
+$( ".overlay2" ).mouseleave(function() {
+  $( ".overlay2" ).animate({
+    opacity: 0
+
+  }, 1, function() {
+    // Animation complete.
+  });
+  $(".overlay2").css("z-index","0");
+  $(".caption2").css("z-index","1");
+});
+$( ".caption3" ).click(function() {
+$(".overlay3").css("z-index","1");
+$(".caption3").css("z-index","0");
+  $( ".overlay3" ).animate({
+    opacity: 0.9
+
+  }, 500, function() {
+    // Animation complete.
+  });
+});
+
+$( ".overlay3" ).mouseleave(function() {
+  $( ".overlay3" ).animate({
+    opacity: 0
+
+  }, 1, function() {
+    // Animation complete.
+  });
+  $(".overlay3").css("z-index","0");
+  $(".caption3").css("z-index","1");
+});
+});
+</script>
+</head>
+<body>
+<div id="nav">
+<nav class="header">
+<ul class="header">
+<li><a class="currentpage" href="home.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="projects.html">Experiences</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<table>
+<tr>
+<td><a target="_blank" href="https://www.facebook.com/vaibhav.malik.71"><img id="facebook" src="images/facebooklogo.png"></a></td>
+<td><a target="_blank" href="https://www.linkedin.com/pub/vaibhav-malik/102/2a5/13a"><img id="linkedin" src="images/linkedinlogo1.png"></a></td>
+</tr>
+</table>
+<img class="logo" src="images/logo.jpg">
+</div>
+<div id="body">
+<img class="welcome" src="images/welcomemat.png">
+</div>
+<div id="body2">
+</br>
+<img id="scroll" src="images/bluearrow.png">
+<p class="companyd" >Hello! My name is Vaibhav Malik and I am currently a sophomore studying Industrial Engineering at Rutgers University. I created this website so potential employers could get to know me better as a person as well as a method to sharpen my web design skills. You can navigate this website to find my contact information, learn more about me and my interests, or judge how well of a job I did or didn't do on creating this website. Advice and criticism is appreciated!</p>
+</div>
+<div id="title">
+<img id="scroll2" src="images/bluearrow.png">
+</br>
+<h1>Snapshot</h1>
+</div>
+<div id="body3">
+</br>
+<p class="click">Click an image to learn more</p>
+<div class="images">
+<img class="caption1" src="https://dmiessler.cachefly.net/images/creative-tree.png">
+<div class="overlay">
+<p class="description">I see life in color not in black in white. There are so many different ways to look at the same problem and I like to have an open mind and try to think from different perspectives. There's never one right answer</p>
+<p class="credit">*Image courtesy of danielmiessler.com URL:https://danielmiessler.com/blog/facebook-creativity-envy/*</p>
+</div>
+<div class="overlay2">
+<p class="description">I want things to be done the right way so I always pay attention to the small details. No matter what I am doing, playing basketball, completing an assignment, or coding a website I make sure I am doing the most diligent job possible. Sometimes the little things make the biggest difference. </p>
+</div>
+<img src="http://www.graphicsfuel.com/wp-content/uploads/2011/12/search-icon-512.png" class="caption2">
+<div class="overlay3">
+<p class="description">I work night and day to reach my goals and will not stop working until I finish what I started.</p>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Blacksmith_anvil_hammer.svg/380px-Blacksmith_anvil_hammer.svg.png" class="caption3">
+</div>
+</div>
+<div id="footer">
+<img class="up"src="images/up.png">
+<p>&copy; Copyright Vaibhav Malik 2015 </p>
+
+</div>
+</body>
+</html>
